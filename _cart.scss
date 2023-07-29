@@ -1,0 +1,231 @@
+.header-cart {
+    height: 400px;
+    background-image: url("image/bg-cart.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+        padding-top: 127px;
+    }
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &__left-box {
+        grid-column: span 8;
+    }
+
+    &__left {
+        display: flex;
+        gap: 30px;
+    }
+
+
+    &__form {
+        height: 100px;
+        width: 379px;
+        background: #F7F6F6;
+        border-radius: 20px;
+        grid-column: span 4;
+    }
+
+    &__item-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 32px;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        &-text {
+            width: 276px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #888888;
+        }
+    }
+
+    &__input {
+        border-radius: 6px;
+        width: 71px;
+        height: 51px;
+
+        background-repeat: no-repeat;
+        background-position-x: 41px;
+        background-position-y: 9px;
+        padding-left: 25px;
+        background-color: #F7F6F6;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        outline: none;
+        border: none;
+    }
+
+    &__item-link a {
+        padding-right: 30px;
+        color: #000000;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+    }
+
+    &__btn {
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-weight: 400;
+        padding: 10px 0 10px 0;
+        background-color: transparent;
+        width: 200px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 7px;
+        margin-top: 40px;
+    }
+
+    &__btn:hover {
+        background-color: #000000;
+        color: #fff;
+
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.item__link {
+    text-decoration: none;
+}
+
+.cart__form {
+    height: 556px;
+
+    &-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        align-self: center;
+
+    }
+
+    & input {
+        width: 288px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #CACDD8;
+        background-color: transparent;
+        margin-left: 28px;
+        margin-bottom: 41px;
+        padding-bottom: 3px;
+    }
+
+    & input::placeholder {
+        color: #000000;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &-total {
+        margin-top: 64px;
+        margin-bottom: 18px;
+        align-self: center;
+    }
+}
+
+.form {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+
+    &__btn {
+        font-size: 16px;
+        line-height: 20px;
+        width: 290px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        font-weight: 400;
+        padding: 10px 0 10px 0;
+        background-color: transparent;
+        align-self: center;
+
+        &:hover {
+            background-color: #000000;
+            color: #fff;
+        }
+    }
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.total-price {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.item__title {
+    margin-top: 0;
+}
+
+.cart__item-count {
+    position: relative;
+}
+
+.number-plus {
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        background-color: #efefef;
+    }
+}
+
+.number-minus {
+
+    position: absolute;
+    top: 23px;
+    left: 40px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        background-color: #efefef;
+    }
+}

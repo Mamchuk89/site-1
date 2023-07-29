@@ -1,0 +1,70 @@
+.header-catalog {
+    height: 400px;
+    background: url("image/catalog/bg-catalog.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 64px;
+}
+
+.header-catalog__title {
+    padding-top: 127px;
+}
+
+.hidden {
+    display: none;
+}
+
+.breadcrumbs {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+ul.breadcrumb__list {
+    align-self: center;
+}
+
+ul.breadcrumb__list li {
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+}
+
+ul.breadcrumb__list li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+ul.breadcrumb__list li a:hover {
+    text-decoration: underline;
+}
+
+ul.breadcrumb__list li+li::before {
+    content: "/ ";
+    padding: 10px;
+}
+
+.select-sort {
+    width: 288px;
+    height: 41px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("image/catalog/Polygon.svg");
+    background-repeat: no-repeat;
+    background-position-x: 246px;
+    background-position-y: 15px;
+    outline: none;
+}
+
